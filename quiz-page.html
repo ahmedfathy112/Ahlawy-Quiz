@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Al-Ahlay <span>Quiz</span></div>
+    </header>
+    <main class="quik-sec">
+      <div class="score" id="score-user">
+        Your Score: <span id="scoreValue">0</span>
+      </div>
+
+      <div class="question" id="quik1">
+        <div class="quiqtion">
+          : السؤال الاول<br />
+          <br />
+          من اللاعب الموجود في الاهلي حاليا ولديه 5 القاب دوري ابطال افريقيا
+        </div>
+        <div class="ans-sec">
+          <button
+            class="answer1 answer"
+            onclick="checkAnswer('محمد الشناوي',this)"
+            id="qui1answer1"
+          >
+            محمد الشناوي
+          </button>
+          <button
+            class="answer1 answer"
+            onclick="checkAnswer('رامي ربيعه',this)"
+            id="qui1answer2"
+          >
+            رامي ربيعه
+          </button>
+          <button
+            class="answer1 answer"
+            onclick="checkAnswer('علي معلول',this)"
+            id="qui1answer3"
+          >
+            علي معلول
+          </button>
+          <button
+            class="answer1 answer"
+            onclick="checkAnswer('محمد هاني',this)"
+            id="qui1answer4"
+          >
+            محمد هاني
+          </button>
+        </div>
+      </div>
+      <div class="question" id="quik2">
+        <div class="quiqtion">
+          : السؤال الثاني<br />
+          <br />
+          من هو اللاعب الذي لعب للنادي الاهلي واحترف بنادي توتنهام
+        </div>
+        <div class="ans-sec">
+          <button
+            class="answer"
+            onclick="checkAnswer('محمود تريزيجيه' ,this)"
+            id="qui2answer1"
+          >
+            محمود تريزيجيه
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('المحمدي' ,this)"
+            id="qui2answer2"
+          >
+            المحمدي
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('بيرسي تاو' ,this)"
+            id="qui2answer3"
+          >
+            بيرسي تاو
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('حسام غالي' ,this)"
+            id="qui2answer4"
+          >
+            حسام غالي
+          </button>
+        </div>
+      </div>
+      <div class="question" id="quik3">
+        <div class="quiqtion">
+          : السؤال الثالث<br />
+          <br />
+          من هو هداف الاهلي التاريخي في دوري ابطال افريقيا
+        </div>
+        <div class="ans-sec">
+          <button
+            class="answer"
+            onclick="checkAnswer('ابوتريكه' , this)"
+            id="qui3answer1"
+          >
+            ابوتريكه
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('حسام حسن' , this)"
+            id="qui3answer2"
+          >
+            حسام حسن
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('محمود الخطيب' , this)"
+            id="qui3answer3"
+          >
+            محمود الخطيب
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('احمد حسن' , this)"
+            id="qui3answer4"
+          >
+            احمد حسن
+          </button>
+        </div>
+      </div>
+      <div class="question" id="quik4">
+        <div class="quiqtion">
+          : السؤال الرابع<br />
+          <br />
+          من هو اخر لاعب للاهلي حصل علي جائزه افضل لاعب بداخل افريقيا
+        </div>
+        <div class="ans-sec">
+          <button
+            class="answer"
+            onclick="checkAnswer('محمد الشناوي', this)"
+            id="qui4answer1"
+          >
+            محمد الشناوي
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('ابو تريكيه', this)"
+            id="qui4answer2"
+          >
+            ابو تريكيه
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('علي معلول', this)"
+            id="qui4answer3"
+          >
+            علي معلول
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('بيرسي تاو', this)"
+            id="qui4answer4"
+          >
+            بيرسي تاو
+          </button>
+        </div>
+      </div>
+      <div class="question" id="quik5">
+        <div class="quiqtion">
+          : السؤال الخامس<br />
+          <br />
+          اي هو رقم اللاعب امام عاشور مع الاهلي
+        </div>
+        <div class="ans-sec">
+          <button
+            class="answer"
+            onclick="checkAnswer('7'), this"
+            id="qui5answer1"
+          >
+            7
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('هو تسعتاش'), this"
+            id="qui5answer2"
+          >
+            هو تسعتاش؟
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('22'), this"
+            id="qui5answer3"
+          >
+            22
+          </button>
+          <button
+            class="answer"
+            onclick="checkAnswer('10'), this"
+            id="qui5answer4"
+          >
+            10
+          </button>
+        </div>
+      </div>
+      <div class="btns-quik">
+        <button class="btn-next" onclick="moveToNextQuestion()" id="nextButton">
+          التالي
+        </button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
